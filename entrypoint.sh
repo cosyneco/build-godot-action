@@ -25,7 +25,7 @@ cd "$GITHUB_WORKSPACE/$5"
 godot --headless --${mode} "$2" $GITHUB_WORKSPACE/build/${SubDirectoryLocation:-""}$1
 echo "Build Done"
 
-echo ::set-output name=build::build/${SubDirectoryLocation:-""}
+echo "build=build/${SubDirectoryLocation:-""}" >> $GITHUB_OUTPUT
 
 
 if [ "$4" = "true" ]
