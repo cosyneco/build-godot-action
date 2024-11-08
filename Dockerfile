@@ -9,7 +9,7 @@ LABEL repository="https://github.com/cosyneco/build-godot-action"
 LABEL homepage="https://cloudsumu.com/"
 LABEL maintainer="Joseph Manley <joseph@cloudsumu.com>"
 
-ENV PATH="$PATH:/opt/dotnet/"
+ENV PATH="$PATH:/opt/dotnet"
 ENV DOTNET_ROOT="/opt/dotnet/"
 
 USER root
